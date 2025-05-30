@@ -31,5 +31,5 @@ stonecutter parameters {
     const("release", property("mod.id") != "template")
     // Dependencies add targets to check versions against
     // Using `node.property()` in this block gets the versioned property
-    dependency("fapi", node!!.project.property("deps.fabric_api").toString())
+    dependency("fabi", node!!.project.property("deps.fabric_api").toString())
 }

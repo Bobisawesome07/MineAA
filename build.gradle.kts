@@ -46,7 +46,7 @@ repositories {
 }
 
 dependencies {
-    fun fapi(vararg modules: String) = modules.forEach {
+    fun fabi(vararg modules: String) = modules.forEach {
         modImplementation(fabricApi.module(it, deps["fabric_api"]))
     }
 
@@ -54,7 +54,7 @@ dependencies {
     mappings("net.fabricmc:yarn:$mcVersion+build.${deps["yarn_build"]}:v2")
     modImplementation("net.fabricmc:fabric-loader:${deps["fabric_loader"]}")
 
-    fapi(
+    fabi(
         // Add modules from https://github.com/FabricMC/fabric
         "fabric-lifecycle-events-v1",
     )
